@@ -15,10 +15,13 @@ var requestAnimationFrame = window.requestAnimationFrame
       const {r, cx, cy} = nextProps
       this.setState({r, cx, cy})
     }
+
+
     render() {
-      console.log(this.state, this.props)
+      var pop = () => { alert("pop!") }
+      // console.log(this.state, this.props)
       return (
-        <circle r={this.props.r} cx={this.props.cx} cy={this.props.cy} fill="#FF53FF" fillOpacity={.5} stroke="#AA1561"/>
+        <circle onClick={pop} r={this.props.r} cx={this.props.cx} cy={this.props.cy} fill="#FF53FF" fillOpacity={.5} stroke="#AA1561"/>
       )
     }
   }
