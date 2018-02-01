@@ -29,7 +29,8 @@ class App extends React.Component {
 
   spawnBubble(){
     let cx = Math.floor(Math.random() * this.props.width)
-    let bubble = {r:20, cx: cx, cy: 800}
+    let r = Math.floor(15 + Math.random() * (30 - 10))
+    let bubble = {r: r, cx: cx, cy: 800, tx:  Math.floor(Math.random() * 5) - 2.5}
     console.log(cx)
     this.state.libraryOfBubbles.push(bubble)
   }
@@ -39,12 +40,14 @@ class App extends React.Component {
     let {libraryOfBubbles} = this.state
     libraryOfBubbles = libraryOfBubbles.map(bubble => {
       bubble.cy-= Math.floor(Math.random() * 10)
+      bubble.cx+= bubble.tx
+      if (Math.random() < 0.05) bubble.tx = Math.floor(Math.random() * 5) - 2.5
       return bubble
     })
     console.log(libraryOfBubbles)
     this.setState({libraryOfBubbles})
     window.setTimeout(this.moveBubbles, 100)
-    window.setTimeout(this.spawnBubble, 1000)
+    window.setTimeout(this.spawnBubble, 5000)
 
   }
 
