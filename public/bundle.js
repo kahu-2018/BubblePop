@@ -968,10 +968,13 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _game = __webpack_require__(28);
+
+var _game2 = _interopRequireDefault(_game);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App(props) {
-
   return _react2.default.createElement(
     'div',
     null,
@@ -979,7 +982,8 @@ var App = function App(props) {
       'h1',
       null,
       'BublePop'
-    )
+    ),
+    _react2.default.createElement(_game2.default, null)
   );
 };
 
@@ -18292,6 +18296,34 @@ function camelize(string) {
 }
 
 module.exports = camelize;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Start = function Start(props) {
+
+    _react2.default.createElement(
+        'button',
+        null,
+        'Start'
+    );
+};
+
+exports.default = Start;
 
 /***/ })
 /******/ ]);
