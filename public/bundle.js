@@ -968,9 +968,9 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _game = __webpack_require__(28);
+var _Game = __webpack_require__(28);
 
-var _game2 = _interopRequireDefault(_game);
+var _Game2 = _interopRequireDefault(_Game);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -983,7 +983,7 @@ var App = function App(props) {
       null,
       'BublePop'
     ),
-    _react2.default.createElement(_game2.default, null)
+    _react2.default.createElement(_Game2.default, null)
   );
 };
 
@@ -18305,7 +18305,7 @@ module.exports = camelize;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _react = __webpack_require__(2);
@@ -18315,12 +18315,15 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Start = function Start(props) {
-
+  return _react2.default.createElement(
+    "div",
+    null,
     _react2.default.createElement(
-        'button',
-        null,
-        'Start'
-    );
+      "button",
+      { className: "startButton" },
+      "Start"
+    )
+  );
 };
 
 exports.default = Start;

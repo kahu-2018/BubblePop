@@ -1,5 +1,5 @@
 import React from 'react'
-import Start from './components/game'
+import Start from './components/Game'
 
 const App = props => {
   return (
