@@ -25,6 +25,7 @@
     "babel-preset-react": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
     "webpack": "^3.10.0"
   }
 }
