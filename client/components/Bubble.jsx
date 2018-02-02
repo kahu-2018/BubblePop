@@ -8,7 +8,7 @@ import React from 'react'
         r: props.r,
         cx: props.cx,
         cy: props.cy,
-        opacity: 0.5,
+        opacity: 0.8,
         bubbleStroke: 1,
       }
       this.click = this.click.bind(this)
@@ -33,7 +33,7 @@ import React from 'react'
       //    console.log(score)
       //  }
       return (
-        <circle onClick={this.click} r={this.props.r} cx={this.props.cx} cy={this.props.cy} fill="#FF53FF" fillOpacity={this.state.opacity} strokeOpacity={this.state.bubbleStroke} stroke="#AA1561"/>
+        <circle style={{cursor: 'crosshair'}} onClick={this.click} r={this.props.r} cx={this.props.cx} cy={this.props.cy} fill="#FF53FF" fillOpacity={this.state.opacity} strokeOpacity={this.state.bubbleStroke} stroke="#AA1561"/>
       )
     }
   }

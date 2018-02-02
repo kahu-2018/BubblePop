@@ -54,10 +54,12 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1> Michael Bublé </h1>
-        <button className="startButton">Start</button>
-        <h2> Score: {this.state.score}</h2>
-        <svg width={this.props.width} height={this.props.height}>
+        <div className = 'header'>
+          <h1 className = 'title'> Bublé-Pop </h1>
+          <button className="startButton">Start</button>
+          <h2 className = 'score'> Score: {this.state.score}</h2>
+        </div>
+        <svg className="buble" width={this.props.width} height={this.props.height}>
           {
             this.state.libraryOfBubbles.map(bubble=>{
               return <Bubble pop={this.pop} r={bubble.r} cx={bubble.cx} cy={bubble.cy} />
