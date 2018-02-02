@@ -1,6 +1,5 @@
 import React from 'react'
 var Bubble = require('./components/Bubble').Bubble
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 var requestAnimationFrame = window.requestAnimationFrame
 
 class App extends React.Component {
