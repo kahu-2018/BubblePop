@@ -1,0 +1,34 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.buble {
+ background-image: url('./images/buble_face.png');
+
+}
+
+.header{
+  border-style: solid;
+  border-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bublePopped {
+  fill-opacity: 1;
+  stroke: "#AA1561";
+}
+.startButton {
+    background-color: #add8e6;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 60%;
+  }
+
+  

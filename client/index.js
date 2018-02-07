@@ -1,5 +1,7 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React from 'react'
+import ReactDOM from 'react-dom'
+var score = require('./components/Bubble.jsx').score
+
 
 import App from './App'
 
