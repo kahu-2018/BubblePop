@@ -56,6 +56,7 @@ class Game extends React.Component {
     return (
       <div>
         <h2 class="header"> Score:{this.state.score}</h2>
+        <div class="buble">
         <svg width={1500} height={1000}>
           {
             this.state.libraryOfBubbles.map(bubble=>{
@@ -63,6 +64,7 @@ class Game extends React.Component {
             })
           }
         </svg>
+        </div>
       </div>
     )
   }

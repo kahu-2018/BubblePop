@@ -3,7 +3,7 @@ body{
 }
 
 .buble {
- background-image:url('./images/buble_face.png')
+ background-image: url('./images/buble_face.png');
 
 }
 
@@ -11,7 +11,7 @@ body{
   border-style: solid;
   border-color: lightblue;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .bublePopped {
