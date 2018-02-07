@@ -1,7 +1,7 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
-import Game from './components/Game'
+import Game from './components/game'
 
 const App = () => {
   return (
