@@ -7,7 +7,7 @@ const App = () => {
   return (
     <Router>
         <div className='header'>
-          <h1 className='title'> Bublé-Pop </h1>
+          <h1 className='title'> Bublé-bath </h1>
           <Route path="/game" component={Game} />
           <a href='/#/game' className="startButton">Start</a>
         </div>
