@@ -55,7 +55,7 @@ class Game extends React.Component {
   render() {
     return (
       <div>
-        <h2> Score: {this.state.score}</h2>
+        <h2 class="header"> Score:{this.state.score}</h2>
         <svg width={1500} height={1000}>
           {
             this.state.libraryOfBubbles.map(bubble=>{
