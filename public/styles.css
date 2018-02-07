@@ -1,6 +1,21 @@
-.
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.buble {
+ background-image:url('./images/buble_face.png')
+
+}
+
+.header{
+  border-style: solid;
+  border-color: lightblue;
+  display: flex;
+  justify-content: space-around
+}
+
 .bublePopped {
-  fill-opacity: .5;
+  fill-opacity: 1;
   stroke: "#AA1561";
 }
 .startButton {
